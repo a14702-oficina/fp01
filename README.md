@@ -48,5 +48,5 @@ Este projeto está licenciado sob a licença **MIT** - consulte o ficheiro `LICE
 ## Autor
 
 **Norte Design**
-*   Desenvolvimento Inicial: Daniel Santos (referenciado no rodapé dos ficheiros)
+*   Desenvolvimento Inicial: Daniel Santos
 *   Ano: 2025
