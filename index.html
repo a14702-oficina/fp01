@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Equipa de Projeto</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f6f6f6;
+      }
+      header { 
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0d6efd;
+        color: white;
+        padding: 15px 30px;
+      }
+
+      header nav a{
+        color: white;
+        margin-left: 20px;
+        text-decoration: 0;
+        font-weight: 600;
+      }
+      main { 
+        grid-area: main;
+        padding: 40px 20px;
+        background: #f8f9fa;
+      }
+      .equipa {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        text-align: center;
+      }
+      .membro {
+        background: rgba(187, 187, 187, 0.2);
+        border: 1.5px solid #c5c5c5;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .membro img {
+        width: 100px;
+        border-radius: 20%;
+        border: 2px solid #0d6efd;
+      }
+      .membro h3 {
+        margin: 10px 0px 5px;
+        color: #0d6efd;
+      }
+      .membro p.trabalho {
+        margin: 0 0 10px;
+        font-weight: bold;
+        color: #333;
+      }
+      .membro p.descrição {
+        font-size: 0.9em;
+        color: #555;
+        margin-bottom: 15px;
+        padding: 0 10px;
+      }
+      .membro button {
+        padding: 8px 16px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #0d6efd;
+        color: white;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .btn {
+        display: inline-block; 
+        margin-top: 10px; 
+        padding: 10px 20px; 
+        background: #0d6efd; 
+        color: white; 
+        text-decoration: none;
+        border-radius: 6px; 
+        font-weight: bold;
+      }
+      footer { 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        background-color: #0d6efd; 
+        color: white; 
+        padding: 10px;   
+      }
+    </style>
+</head>
+<body>
+  <div class="pagina">
+    <header>
+      <h1>Norte Design</h1>
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+      <section class="equipa">
+        <div class="membro">
+          <img src="images/ana.png" alt="Foto de Ana Costa" />
+            <h3>Ana Costa</h3>
+            <p class="trabalho">Gestora de Projeto</p>
+            <p class="descrição">Ana coordena toda a equipa e garante que os prazos são cumpridos.</p>
+            <a class="btn" href="ana.html">Saiba mais</a>
+        </div>
+        <div class="membro">
+          <img src="images/rui.png" alt="Foto de Rui Pereira" />
+            <h3>Rui Pereira</h3>
+            <p class="trabalho">Programador Frontend</p>
+            <p class="descrição">Rui desenvolve interfaces responsivas e experiências agradáveis para o utilizador.</p>
+            <a class="btn" href="rui.html">Saiba mais</a>
+        </div>
+        <div class="membro">
+          <img src="images/sofia.png" alt="Foto de Sofia Marques" />
+          <h3>Sofia Marques</h3>
+          <p class="trabalho">Designer UI/UX</p>
+          <p class="descrição">Sofia cria layouts modernos e intuitivos para o projeto.</p>
+          <a class="btn" href="sofia.html">Saiba mais</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Norte Design - Daniel Santos</p>
+    </footer>
+  </div>
+</body>
+</html>
